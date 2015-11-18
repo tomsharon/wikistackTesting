@@ -29,3 +29,7 @@ app.use(function (err, req, res, next) {
     console.error(err);
     res.status(500).send(err.message);
 });
+
+app.listen(3000, function(){
+	console.log("listening on port 3000");
+})
